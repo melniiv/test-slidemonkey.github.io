@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--fontsize-heading-xl);
+  font-size: var(--fontsize-heading-l);
   font-weight: 400;
   line-height: var(--lineheight-s);
 }
