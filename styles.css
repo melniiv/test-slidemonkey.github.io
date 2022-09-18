@@ -146,7 +146,6 @@ section {
 
 .col-2-auto > * {
   flex: 0 0 auto;
-  /*fix 50 and 30 for lower res*/
   width: 50%;
 }
 
@@ -395,6 +394,11 @@ section {
   background-color: var(--colors-dark-grey);
 }
 
+.experience .col-2-auto > * {
+  flex: 0 0 auto;
+  width: 30%;
+}
+
 .experience-content {
   display: flex;
   flex-direction: column;
@@ -437,7 +441,7 @@ section {
 
 .services-content p {
   font-size: var(--fontsize-body-xl);
-  margin: var(--spacing-l) 0;
+  margin-bottom: var(--spacing-l);
 }
 
 .services-content > .content > h2 {
@@ -507,6 +511,11 @@ section {
 
 .awards {
   background-color: var(--colors-dark-blue);
+}
+
+.awards .col-2-auto > * {
+  flex: 0 0 auto;
+  width: 15%;
 }
 
 .awards-content {
