@@ -193,6 +193,7 @@ section {
   align-items: center;
   scroll-snap-align: start;
   padding: 0 var(--spacing-m);
+  scroll-margin: var(--spacing-m);
 }
 
 section.intro {
@@ -793,15 +794,18 @@ section.intro {
 }
 
 .contact > .contact-content > :first-child {
-  height: 47vh;
   background-color: var(--colors-yellow);
   padding: 0 var(--spacing-m);
 }
 
 .contact > .contact-content > :nth-child(2) {
-  height: 47vh;
+  height: 34vh;
   background-color: var(--colors-dark-blue);
   padding: 0 var(--spacing-m);
+}
+
+.contact > .contact-content > :nth-child(2) > .content {
+  padding: 0 var(--spacing-2-xl);
 }
 
 .contact > .contact-content > :last-child {
@@ -874,7 +878,7 @@ section.intro {
 }
 
 .contact-content nav.footer-navigation ul {
-  width: 19vw;
+  width: 24vw;
 }
 .contact-content nav.footer-navigation ul > li {
   padding-inline-start: 1ch;
