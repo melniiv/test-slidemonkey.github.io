@@ -615,7 +615,7 @@ section {
   border-bottom: 2px solid var(--colors-dark-grey);
   padding: var(--spacing-xs);
   color: var(--colors-white);
-  font-size: var(--fontsize-heading-l);
+  font-size: var(--fontsize-heading-m);
   font-weight: 600;
 }
 
@@ -638,7 +638,7 @@ section {
 
 .services-container > .row-4 {
   display: flex;
-  font-size: var(--fontsize-body-xl);
+  font-size: var(--fontsize-body-l);
   justify-content: center;
   align-items: center;
   text-align: center;
