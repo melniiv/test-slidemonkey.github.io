@@ -652,6 +652,7 @@ section {
   border-right: 2px solid var(--colors-dark-grey);
   padding: var(--spacing-xs);
   height: 100%;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 768px) {
