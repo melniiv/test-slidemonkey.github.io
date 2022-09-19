@@ -191,7 +191,7 @@ section {
 
 .col-2 > div {
   flex: 1 0 50%;
-  font-size: var(--fontsize-heading-xxs);
+  font-size: var(--fontsize-heading-s);
   line-height: var(--lineheight-l);
 }
 
