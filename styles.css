@@ -232,8 +232,9 @@ section {
 
 .block-rows {
   border-bottom: 2px solid var(--colors-white);
-  margin-bottom: var(--spacing-s);
-  line-height: var(--lineheight-m);
+  margin-bottom: var(--spacing-m);
+  padding-bottom: var(--spacing-2-xs);
+  line-height: var(--lineheight-s);
 }
 
 /*INTRO*/
@@ -612,7 +613,7 @@ section {
   background-color: red;
   border-top: 2px solid var(--colors-dark-grey);
   border-bottom: 2px solid var(--colors-dark-grey);
-  padding: var(--spacing-s);
+  padding: var(--spacing-xs);
   color: var(--colors-white);
   font-size: var(--fontsize-heading-l);
   font-weight: 600;
@@ -649,7 +650,8 @@ section {
   justify-content: center;
   align-items: center;
   border-right: 2px solid var(--colors-dark-grey);
-  padding: var(--spacing-s);
+  padding: var(--spacing-xs);
+  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
