@@ -637,6 +637,10 @@ section {
 
 .services-container > .row-4 {
   display: flex;
+  font-size: var(--fontsize-body-xl);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .services-container > .row-4 > * {
