@@ -799,13 +799,8 @@ section.intro {
 }
 
 .contact > .contact-content > :nth-child(2) {
-  height: 34vh;
   background-color: var(--colors-dark-blue);
   padding: 0 var(--spacing-m);
-}
-
-.contact > .contact-content > :nth-child(2) > .content {
-  padding: 0 var(--spacing-2-xl);
 }
 
 .contact > .contact-content > :last-child {
@@ -862,10 +857,6 @@ section.intro {
   height: 100%;
   gap: var(--spacing-m);
   font-size: var(--fontsize-heading-m);
-}
-
-.footer-logo {
-  padding: var(--spacing-xl) 0;
 }
 
 .contact-content nav.footer-navigation {
