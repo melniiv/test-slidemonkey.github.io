@@ -152,6 +152,7 @@ header {
   justify-content: space-between;
   padding: var(--spacing-m);
   background-color: var(--colors-dark-blue);
+  height: var(--spacing-7-xl);
 }
 
 header ul {
@@ -334,7 +335,7 @@ section.intro {
 .intro-content-top {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing-2-xl) 0;
+  padding: var(--spacing-3-xl) 0;
   border-bottom: 5px solid var(--colors-white);
 }
 
@@ -357,11 +358,12 @@ section.intro {
 /*hamburger*/
 
 .menu__icon {
-  height: var(--spacing-xl);
-  width: var(--spacing-xl);
-  margin: var(--spacing-m) 0;
+  height: var(--spacing-2-xl);
+  width: var(--spacing-2-xl);
+  margin: var(--spacing-l);
+  margin-right: 0;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: var(--spacing-m);
   display: inline-block;
   vertical-align: middle;
@@ -373,8 +375,8 @@ section.intro {
   display: block;
   background: white;
   width: 100%;
-  height: 8px;
-  margin-top: -4px;
+  height: 10%;
+  margin-top: -5%;
   position: absolute;
   left: 0;
   top: 50%;
@@ -386,7 +388,7 @@ section.intro {
   display: block;
   background: var(--colors-white);
   width: 100%;
-  height: 8px;
+  height: 10%;
   position: absolute;
   left: 0;
   transform-origin: center center;
@@ -395,13 +397,13 @@ section.intro {
 }
 
 .menu__icon:before {
-  top: 4px;
-  margin-top: -4px;
+  top: 5%;
+  margin-top: -5%;
 }
 
 .menu__icon:after {
-  bottom: 4px;
-  margin-bottom: -4px;
+  bottom: 5%;
+  margin-bottom: -5%;
 }
 
 .menu_shown .menu__icon span {
