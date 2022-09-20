@@ -102,7 +102,7 @@
     <link type="text/css" rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <img src="images/logo.svg" />
       <nav>
         <a class="menu__icon mobile" onclick="toggleClassBody('menu_shown')"
@@ -165,7 +165,7 @@
       <div class="container">
         <section class="intro" id="intro">
           <div class="intro-content">
-            <div class="intro-content-top"></div>
+            <div id="intro-top" class="intro-content-top"></div>
             <div class="content">
               <h1>
                 <span>Interim leadership for</span>
@@ -530,17 +530,19 @@
             <div class="content-row">
               <div class="content">
                 <div><h2>Contact</h2></div>
-                <div class="contact-blocks">
-                  <div class="contact-rows">
-                    <div class="contact-row">Slide Monkey Consulting Oy</div>
-                    <div class="contact-row">Pohjoisranta 14 B 61</div>
-                    <div class="contact-row">00170 Helsinki</div>
-                    <div class="contact-row">3239140-5</div>
-                  </div>
-                  <div class="contact-rows">
-                    <div class="contact-row">Phone +358(0)50 331 6430</div>
-                    <div class="contact-row">
-                      email: janne(at)slidemonkey.fi
+                <div class="contact-blocks-container">
+                  <div class="contact-blocks">
+                    <div class="contact-rows">
+                      <div class="contact-row">Slide Monkey Consulting Oy</div>
+                      <div class="contact-row">Pohjoisranta 14 B 61</div>
+                      <div class="contact-row">00170 Helsinki</div>
+                      <div class="contact-row">3239140-5</div>
+                    </div>
+                    <div class="contact-rows">
+                      <div class="contact-row">Phone +358(0)50 331 6430</div>
+                      <div class="contact-row">
+                        email: janne(at)slidemonkey.fi
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -633,6 +635,30 @@
             block: 'start',
             inline: 'start',
           })
+        }
+      }
+
+      window.onscroll = function () {
+        const element = document.querySelector('#mainContent')
+        if (element.getBoundingClientRect().top < -20) {
+          const header = document.querySelector('#header')
+          const introTop = document.querySelector('#intro-top')
+          if (header && !header.classList.contains('small')) {
+            header.classList.toggle('small')
+          }
+          if (introTop && !introTop.classList.contains('no-border')) {
+            introTop.classList.toggle('no-border')
+          }
+        }
+        if (element.getBoundingClientRect().top > -19) {
+          const header = document.querySelector('#header')
+          const introTop = document.querySelector('#intro-top')
+          if (header && header.classList.contains('small')) {
+            header.classList.toggle('small')
+          }
+          if (introTop && introTop.classList.contains('no-border')) {
+            introTop.classList.toggle('no-border')
+          }
         }
       }
     </script>
