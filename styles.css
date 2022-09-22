@@ -107,8 +107,11 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+main {
   font-family: var(--font-default);
+  width: 100%;
+  height: 100%;
 }
 
 h1,
@@ -126,7 +129,7 @@ h3 {
   line-height: var(--lineheight-s);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   h1,
   h2 {
     font-size: var(--fontsize-heading-mobile-xxl);
@@ -173,7 +176,7 @@ header img {
   transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   header {
     padding: var(--spacing-4-xl) 5vw;
   }
@@ -201,7 +204,7 @@ header .logo-container > :first-child {
   margin-right: var(--spacing-xs);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   header .logo-container > :last-child {
     display: none;
   }
@@ -242,7 +245,7 @@ header ul li::marker {
   content: '';
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   header ul a,
   header ul a:visited {
     font-size: 5vw;
@@ -326,7 +329,7 @@ header.small .menu__icon span {
   margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .menu__icon {
     height: 14.48vw;
     width: 14.48vw;
@@ -425,7 +428,7 @@ section.intro {
   height: 100vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   section {
     height: unset;
   }
@@ -446,7 +449,7 @@ section.intro {
   animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .container {
     height: unset;
   }
@@ -468,7 +471,7 @@ section.intro {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .content {
     max-width: unset;
     padding: 18vw var(--spacing-4-xl);
@@ -480,7 +483,7 @@ section.intro {
   font-family: var(--font-demi-bold);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .col-2 {
     flex-direction: column;
   }
@@ -500,7 +503,7 @@ section.intro {
   padding-left: var(--spacing-l);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .col-2 > div {
     font-size: var(--fontsize-body-mobile-m);
     line-height: var(--lineheight-mobile-xl);
@@ -541,7 +544,7 @@ section.intro {
   line-height: var(--lineheight-m);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .block-rows {
     margin-bottom: var(--spacing-7-xl);
   }
@@ -585,7 +588,7 @@ section.intro {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .heading-desktop {
     display: none;
   }
@@ -603,7 +606,7 @@ section.intro {
   transition: all 0s linear;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .intro-content-top {
     padding: 11.5vw 0;
     margin: 0 var(--spacing-4-xl);
@@ -630,7 +633,7 @@ section.intro {
   font-size: var(--fontsize-body-l);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .intro-content-bottom {
     display: flex;
     flex-direction: column;
@@ -670,7 +673,7 @@ section.intro {
   margin-bottom: var(--spacing-2-xl);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .mission-content > .content > h2 {
     width: 100%;
     padding: var(--spacing-4-xl) 0;
@@ -685,7 +688,7 @@ section.intro {
   padding: var(--spacing-m) 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .mission-content > .content > .author {
     justify-content: flex-start;
     font-size: var(--fontsize-heading-mobile-l);
@@ -704,7 +707,7 @@ section.intro {
   background-color: var(--colors-white);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about .col-2 {
     gap: 0;
   }
@@ -719,7 +722,7 @@ section.intro {
   color: var(--colors-dark-grey);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about-content {
     margin-bottom: var(--spacing-4-xl);
   }
@@ -730,7 +733,7 @@ section.intro {
   color: var(--colors-blue);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about-content > .content > h2 {
     width: 100%;
     margin: var(--spacing-l) 0;
@@ -743,7 +746,7 @@ section.intro {
   padding-top: var(--spacing-3-xl);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about-content img {
     max-width: 80%;
     padding-top: var(--spacing-l);
@@ -769,7 +772,7 @@ section.intro {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about-content .col-2 > div {
     font-size: var(--fontsize-body-mobile-m);
   }
@@ -786,7 +789,7 @@ section.intro {
   background-color: var(--colors-dark-grey);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .experience {
     padding-bottom: var(--spacing-l);
   }
@@ -804,7 +807,7 @@ section.intro {
   margin: var(--spacing-xl) 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .experience-content > .content > h2 {
     margin: var(--spacing-l) 0;
   }
@@ -824,7 +827,7 @@ section.intro {
   background-color: var(--colors-white);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .services {
     padding-bottom: var(--spacing-xl);
   }
@@ -849,7 +852,7 @@ section.intro {
   margin: var(--spacing-xl) 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .services-content p {
     font-size: var(--fontsize-body-mobile-m);
     margin-bottom: var(--spacing-7-xl);
@@ -890,7 +893,7 @@ section.intro {
   font-family: var(--font-extra-bold);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .services-container > .row-1 {
     font-size: 7vw;
     padding: var(--spacing-xl);
@@ -932,7 +935,7 @@ section.intro {
   line-height: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .services-container > .row-4 {
     flex-direction: column;
   }
@@ -980,7 +983,7 @@ section.intro {
   padding-bottom: var(--spacing-s);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .awards-content .block-rows {
     padding-bottom: var(--spacing-7-xl);
     margin-bottom: var(--spacing-l);
@@ -1004,7 +1007,7 @@ section.intro {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .awards-content > .content > h2 {
     font-size: var(--fontsize-heading-mobile-xl);
   }
@@ -1051,7 +1054,7 @@ section.intro {
   padding: 0 var(--spacing-m);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact > .contact-content > :first-child {
     height: 100%;
   }
@@ -1073,7 +1076,7 @@ section.intro {
   line-height: var(--lineheight-xs);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content h2 {
     margin: var(--spacing-l) 0;
   }
@@ -1093,7 +1096,7 @@ section.intro {
   height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content .content {
     flex-direction: column;
   }
@@ -1114,7 +1117,7 @@ section.intro {
   font-size: var(--fontsize-body-l);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content .contact-blocks {
     font-size: var(--fontsize-body-mobile-m);
   }
@@ -1139,7 +1142,7 @@ section.intro {
   height: var(--spacing-3-xl);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content .footer-logo {
     flex-direction: column;
   }
@@ -1164,7 +1167,7 @@ section.intro {
   font-size: var(--fontsize-body-xl);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content nav.footer-navigation {
     margin: 12vw 0;
     margin-left: 4vw;
@@ -1175,7 +1178,7 @@ section.intro {
   width: 24vw;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content nav.footer-navigation ul {
     width: 100%;
   }
@@ -1186,7 +1189,7 @@ section.intro {
   font-size: var(--fontsize-body-l);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .contact-content nav.footer-navigation ul > li {
     font-size: var(--fontsize-body-mobile-m);
   }
@@ -1213,7 +1216,7 @@ section.intro {
   font-family: var(--font-heavy);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .back-to-top {
     font-size: var(--fontsize-body-mobile-xl);
   }
