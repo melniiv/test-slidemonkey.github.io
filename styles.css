@@ -94,12 +94,12 @@
   --lineheight-mobile-xl: 7.08vw;
 }
 
-::marker {
+/*::marker {
   content: '»';
   font-size: 1em;
   --hue: 0;
   color: var(--colors-white);
-}
+}*/
 
 * {
   margin: 0;
@@ -141,6 +141,16 @@ h3 {
     line-height: var(--lineheight-m);
     padding: var(--spacing-4-xl) 0;
   }
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:before {
+  content: '»';
+  font-size: 1em;
+  padding-right: 5px;
 }
 
 header {
@@ -240,14 +250,14 @@ header ul li {
   list-style-type: none;
 }
 
-header ul li::marker {
+header ul li::before {
   content: '';
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   header ul a,
   header ul a:visited {
-    font-size: 5vw;
+    font-size: var(--fontsize-body-mobile-l);
     padding-bottom: var(--spacing-xxs);
   }
 
@@ -257,7 +267,7 @@ header ul li::marker {
   }
 
   header ul li {
-    margin: var(--spacing-l) 0;
+    margin: var(--spacing-3-xl) 0;
     width: 100%;
   }
 }
@@ -546,6 +556,7 @@ section.intro {
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .block-rows {
     margin-bottom: var(--spacing-7-xl);
+    padding-bottom: var(--spacing-6-xl);
   }
 }
 
@@ -607,7 +618,7 @@ section.intro {
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .intro-content-top {
-    padding: 11.5vw 0;
+    padding: 11.7vw 0;
     margin: 0 var(--spacing-4-xl);
   }
 }
@@ -855,6 +866,7 @@ section.intro {
   .services-content p {
     font-size: var(--fontsize-body-mobile-m);
     margin-bottom: var(--spacing-7-xl);
+    line-height: var(--lineheight-mobile-xl);
   }
 
   .services-content > .content > h2 {
@@ -896,6 +908,7 @@ section.intro {
   .services-container > .row-1 {
     font-size: 7vw;
     padding: var(--spacing-xl);
+    text-align: center;
   }
 }
 
@@ -984,8 +997,8 @@ section.intro {
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   .awards-content .block-rows {
-    padding-bottom: var(--spacing-7-xl);
-    margin-bottom: var(--spacing-l);
+    padding-bottom: var(--spacing-4-xl);
+    margin-bottom: var(--spacing-4-xl);
   }
 }
 
